@@ -1,0 +1,108 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #faf2a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+.principal
+{
+    width:80%;
+    height: 90vh;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+   
+}
+
+.segunda
+{
+    width: 100%;
+    height: 20vh;
+    margin-top: -20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+.caixa
+{
+    width: 100%;
+    height: 50vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -50px;
+    position: relative;
+}
+
+.msg
+{
+    width: 220px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+
+.botao
+{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #EF5867;
+    
+}
+
+.logo
+{
+    margin-top: 90px;
+}
+
+.texto_animado{
+    font-size: 14px;
+    position: absolute;
+    top:68px;  /*  135  */
+    left: 40px;  /* 30  */
+    color:rgb(5, 44, 31);
+}
+
+.animar{
+    animation: sobe 1s forwards;
+}
+@keyframes sobe {
+    0%{top:68px;left:40px;}
+    100%{top:40px;left:30px}
+}
+.resposta
+{
+    width: 95%;
+    height: 180px;
+ 
+    margin-bottom: 5px;
+    margin-top:10px;
+    text-align: justify;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 20px;
+}

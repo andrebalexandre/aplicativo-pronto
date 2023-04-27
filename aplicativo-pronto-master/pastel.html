@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOLHA</title>
+    <link rel="stylesheet" href="escolha.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+  <div class="principal">
+    <header id="header">
+        <a id="logo" href="pao_queijo.html"><img src="seta.png" width="20px"></a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="/">Minha Conta</a></li>
+            <li><a href="principal.html">Produtos</a></li>
+            <li><a href="/carrinho.html">Carrinho</a></li>
+            <li><a href="/fale_conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="./script.js"></script>
+    </div>
+
+    <div class="div2">
+        <div class="barra">
+            
+            <img src="logo.png" width="120px" class="logo">
+            <img src="titulo.png" width="180px" class="titulo">
+        </div>
+    </div>
+
+    <div class="foto">
+       <b> PASTEL DE FRANGO</b> 
+        <img src="pastel.png" width="150px">
+        <br>
+        
+
+    </div>
+ 
+        <fieldset class="fil1"> <legend> ESCOLHA SUA PREFERÊNCIA</legend>
+        
+            <input type="checkbox"> SEM OVO &nbsp; &nbsp;
+            <input type="checkbox"> SEM GLÚTEM &nbsp; &nbsp;
+            <br>  <br>
+            <input type="checkbox"> SEM LEITE &nbsp; &nbsp;
+            <input type="checkbox"> SEM SAL &nbsp; &nbsp;
+        </fieldset>
+           
+    </div>
+  <div class="uni">
+
+   <fieldset class="fil2">
+    <legend>ESCOLHA A QUANTIDADE</legend>
+
+    <button onclick="Subtrair();" class="menos"> <b>-</b> </button>
+    <input class="numero" value="1" id="numero" type="number">
+    <button onclick="Adicionar();" class="mais"><b>+</b></button>
+
+   </fieldset>
+     <br> 
+   
+    
+    <button class="comprar"> COMPRAR </button>
+   
+    <script>
+      function Adicionar()
+      {
+          numero.value=parseInt(numero.value)+1
+         
+      }
+
+      function Subtrair()
+      {
+          if(numero.value >1)
+          {
+              numero.value=parseInt(numero.value)-1
+          }
+          
+
+      }
+
+      
+
+  </script>
+
+  </div>
+</div>
+
+   
+    
+
+   
+</body>
+</html>

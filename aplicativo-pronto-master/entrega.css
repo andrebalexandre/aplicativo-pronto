@@ -1,0 +1,120 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.principal
+
+
+.div1
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+  
+.quadrado
+{
+    width: 320px;
+    height: 90px;
+    background-color: #EF5867;
+    border-radius: 0px 0px 20% 20%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.barra
+{
+    width: 100%;
+    height: 3vh;
+    background-color: #EF5867;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.logo
+{
+    margin-left: 25px;
+}
+
+.titulo
+{
+    margin-left: 10px;
+    margin-top: -50px;
+    width: 200px;
+}
+
+.inteira
+{
+    width: 100%;
+    height: 60vh;
+    margin-top: 48px;
+    background-color: #ef5867c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;    
+  
+}
+
+.texto
+{
+    width: 100%;
+    height: 5vh;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgba(127, 255, 212, 0.452);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;    
+
+}
+
+.foto
+{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 255, 0.349);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;    
+    font-size: 15px;
+}
+
+.metade
+{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(127, 255, 212, 0.387);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;    
+    font-size: 15px;
+}
+
+
