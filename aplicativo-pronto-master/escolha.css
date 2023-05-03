@@ -80,6 +80,7 @@ body
     width: 86%;
     border-radius: 20px;
     font-size: 5x;
+    border-style: none;
 
 }
 
@@ -119,8 +120,20 @@ body
     border-style: none;
     display: flex;
     justify-content: center;
+
 }
 
+.menos
+{
+height: 30px;
+width: 30px;
+}
+
+.mais
+{
+    height: 30px;
+    width: 30px;
+}
 .numero
 {
     width: 100px;
