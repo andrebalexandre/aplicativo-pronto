@@ -8,28 +8,18 @@ body
         margin: 0px;
     }
 
-    .div1
-    {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-    }
-
     .div3
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        margin-left: -20px;
-        margin-top: 70px;
+        margin-top: 80px;
+        margin-left: 22px;
+        background-color: aquamarine;
+        width: 315px;
+        height: 340px;
     }
 
     .barra
     {
-        width: 360px;
+        width: 380px;
         height: 20px;
         background-color: #EF5867;
         display: flex;
@@ -39,11 +29,12 @@ body
         margin-top: 80px;
     }
 
-    
     .barrinha
     {
         margin-top: 20px;
         margin-left: 310px;
+
+
     }
 
     .logo
@@ -55,4 +46,21 @@ body
     {
         margin-left: 20px;
         margin-top: -45px;
+    }
+
+    .truck-button{
+        --color:#fff;
+        --background:#2B3044;
+        --tick: #16BF78;
+        --base: #0D0f18;
+        --wheel: #2B3044;
+        --wheel-inner: #646B8C;
+        --wheel-dot:#fff;
+        --back:#6D58FF;
+        --back-inner: #362A89;
+        --back-inner-shadow:#2D246B;
+        --front: #A6ACCD;
+
+
+
     }
