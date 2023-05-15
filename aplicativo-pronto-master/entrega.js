@@ -1,5 +1,5 @@
-document.querySelectorAll('.truck-button').forEach(button => { 
-    button.addEventListener('click', e =>  {
+//document.querySelectorAll('.truck-button').forEach(button => { 
+    //button.addEventListener('click', e =>  {
 
         e.preventDefault();
 
