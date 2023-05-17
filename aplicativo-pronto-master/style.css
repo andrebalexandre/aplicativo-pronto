@@ -21,8 +21,8 @@ a:hover {
 
 #header {
   box-sizing: border-box;
+  width: 370px;
   height: 70px;
-  width: 380px;
   padding: 1rem;
   display: flex;
   align-items: center;

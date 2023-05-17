@@ -11,8 +11,18 @@ body
     .div3
     {
         margin-top: 80px;
-        margin-left: 22px;
-        background-color: aquamarine;
+        margin-left: 24px;
+        width: 315px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .div4
+    {
+        margin-top: 80px;
+        margin-left: 24px;
         width: 315px;
         height: 50px;
         display: flex;
