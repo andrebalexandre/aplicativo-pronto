@@ -27,7 +27,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #EF5867;
+  background: rgba(152, 80, 29, 0.952);
   border-radius: 0px 0px 20% 20%;
 }
 
