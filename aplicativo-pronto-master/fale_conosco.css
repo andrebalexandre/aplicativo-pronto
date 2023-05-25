@@ -28,7 +28,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #EF5867;
+  background: #7D0000;
   border-radius: 0px 0px 20% 20%;
 }
 
@@ -54,7 +54,7 @@ a:hover {
     width: 100%;
     top: 70px;
     right: 0px;
-    background: antiquewhite;
+    background: #EDD9D9;
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -112,7 +112,7 @@ body
 {
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: #EDD9D9;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -121,7 +121,7 @@ body
 .a2
 {
     text-decoration: none;
-    color: #EF5867
+    color: #7D0000
 }
 
 .logo
@@ -156,7 +156,7 @@ body
     border-color: black;
     width: 250px;
     font-size: 20px; 
-    color:#EF5867;
+    color:#7D0000;
 }
 
 .bt
@@ -169,7 +169,7 @@ body
     align-self: center;
     width: 250px;
     font-size: 20px;
-    background-color:  #EF5867;
+    background-color:  #7D0000;
 
 }
 .resposta
