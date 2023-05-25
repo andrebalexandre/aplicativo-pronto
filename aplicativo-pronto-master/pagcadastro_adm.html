@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
-    <link rel="stylesheet" href="pg_cadastro1.css">
+    <link rel="stylesheet" href="pagcadastro_adm.css">
 </head>
 <body>
     <header id="header">
-        <a id="seta" href="pglogin1.html"><img src="seta.png" width="25px"></a>
+        <a id="seta" href="pglogin1.html"><img src="seta.png" width="20px"></a>
+        
       </header>
-      <script src="./pg_cadastro1.js"></script>
+      <script src="script.js"></script>
      
     
       <div class="barra">
@@ -20,11 +21,12 @@
         <img src="titulo1.png" width="190px" class="titulo">
         
 </div>
-<div class="d2">
+    <div class="d2">
     <b>Meu cadastro</b>  
        </div>
-       <form action="crud.php" method="post">
+       <form>
         <div class="d3">
+
             <fieldset>
                 <legend><b>Email</b></legend>
                 <input type="text" id="email" name="email">
@@ -35,6 +37,7 @@
                 <input type="password" id="senha" name="senha">
             </fieldset>
           <br>
+
           <div class="d4">
             <b>Dados pessoais:</b>
           </div>
@@ -61,22 +64,22 @@
 
             <fieldset>
                 <legend><b>Rua</b></legend>
-                    <input type="text" id="complemento" name="complemento">
+                    <input type="text" id="Rua" name="Rua">
             </fieldset>
 
             <fieldset>
                 <legend><b>Bairro</b></legend>
-                    <input type="text" id="complemento" name="complemento">
+                    <input type="text" id="bairro" name="complemento">
             </fieldset>
 
             <fieldset>
                 <legend><b>Número</b></legend>
-                    <input type="number" id="complemento" name="complemento">
+                    <input type="text" id="numero" name="complemento">
             </fieldset>
 
             <fieldset>
                 <legend><b>Estado</b></legend>
-                    <input type="text" id="complemento" name="complemento">
+                    <input type="text" id="estado" name="complemento">
             </fieldset>
 
             <fieldset>
@@ -84,38 +87,48 @@
                     <input type="text" id="complemento" name="complemento">
             </fieldset>
             <br>
-        
-            <a href="pglogin1.html"><button type="submit" class="bt"><b>Efetuar Cadastro</b></button></a>
-            <br> <br> <br> <br>
+           </form>
+
+            <script>
+                function ValidarCEP()
+          {
+              //acesse o site regex101.com
+              expressao = /[0-9]{5}-[0-9]{3}$/g; 
+              texto = cep.value;
+              if (texto.length==5)
+              {
+                  cep.value = texto + "-";
+              }
+      
+              resposta = expressao.test(texto);
+              if (resposta==true)
+               {
+                  cep.classList.remove('errado');
+                  cep.classList.add('certo');
+               }
+              if (resposta==false)
+               {
+                  cep.classList.remove('certo');
+                  cep.classList.add('errado');
+               }
+          }
+      
+        </script>
         </div>
+        <br>
     </div>
+        <div class="d5">
+            <button type="submit" class="bt1"><b>Inserir</b></button>
+            <button type="submit" class="bt2"><b>Alterar</b></button>
+        </div>
+        <br> 
+            <div class="d6">
+                <button type="submit" class="bt1"><b>Deletar</b></button>
+                <button type="submit" class="bt2"><b>Pesquisar</b></button> 
+            </div>
+            <br> <br> <br>
 
-</form>
-    <script>
-        function ValidarCEP()
-  {
-      //acesse o site regex101.com
-      expressao = /[0-9]{5}-[0-9]{3}$/g; 
-      texto = cep.value;
-      if (texto.length==5)
-      {
-          cep.value = texto + "-";
-      }
-
-      resposta = expressao.test(texto);
-      if (resposta==true)
-       {
-          cep.classList.remove('errado');
-          cep.classList.add('certo');
-       }
-      if (resposta==false)
-       {
-          cep.classList.remove('certo');
-          cep.classList.add('errado');
-       }
-  }
-
-</script>
+ 
 
 </body>
 </html>
