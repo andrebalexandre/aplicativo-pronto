@@ -61,6 +61,8 @@ body
 
     .bt1
     {
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         margin-left: 20px;
         background-color: #7D0000;
