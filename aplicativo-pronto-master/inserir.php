@@ -17,10 +17,10 @@
     if(isset($_POST["inserir"]) )
     {
 
-    $comando = $pdo->prepare("INSERT INTO aluno Values($email,'$senha','$nome','$telefone','$data','$data',
+    $comando = $pdo->prepare("INSERT INTO cadastro Values($email,'$senha','$nome','$telefone','$data','$data',
     '$cep','$rua','$bairro','$numero','$estado','$complemento')");
     
     $resultado = $comando->execute();
     //para voltar no formulário:
-    header("location: pgcadastro1.html");
+    header("location: pglogin.html");
     }
