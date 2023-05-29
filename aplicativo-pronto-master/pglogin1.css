@@ -59,11 +59,12 @@
         background-color: #7D0000;
         cursor: pointer;
         cursor: auto;
+        color: white;
     }
 
     a
     {
-        color: black;
+        color: white;
         text-decoration: none;
     }
     .escrita

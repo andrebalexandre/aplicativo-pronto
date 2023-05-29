@@ -4,7 +4,7 @@
     
     // CONEXÃO COM A BASE DE DADOS: verifique sempre o dbname
     try{
-        $pdo = new PDO("mysql:dbname=the_inclusive_bakery;host=localhost;charset=utf8","root","");
+        $pdo = new PDO("mysql:dbname=aplicativo;host=localhost;charset=utf8","root","");
     }
     catch(PDOException $erro)
     {
