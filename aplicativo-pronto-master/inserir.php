@@ -21,5 +21,5 @@
     
     $resultado = $comando->execute();
     //para voltar no formulário:
-    header("location: pgcadastro1.html");
+    header("location: pglogin1.html");
     }

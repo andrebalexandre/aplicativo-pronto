@@ -64,10 +64,12 @@
 
     a
     {
-        color: white;
+        color: black;
         text-decoration: none;
     }
     .escrita
     {
         font-size: 20px;
+        font-style: italic;
+        text-decoration: underline black;
     }
