@@ -1,11 +1,11 @@
 <?php
 
-  $login = $_POST ["login"]; //pega o input
+  $email = $_POST ["email"]; //pega o input
   $senha = $_POST ["senha"];
 
     include("conecta.php"); // conectar com banco de dados
 
-    $comando = $pdo->prepare("SELECT * FROM 'login' WHERE login='$login' and senha='$senha' ");
+    $comando = $pdo->prepare("SELECT * FROM cadastro WHERE email='$email' and senha='$senha' ");
     $resultado = $comando->execute();
     $n = 0;
     $admin= "n";

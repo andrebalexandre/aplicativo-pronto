@@ -3,7 +3,7 @@
     $senha      = $_POST["Senha"];
     $nome    = $_POST["Nome"];
     $telefone    = $_POST["Telefone"];
-    $data    = $_POST["Data_Nascimento"];
+    $data    = $_POST["Data"];
     $cep     = $_POST["Cep"];
     $rua     = $_POST["Rua"];
     $bairro     = $_POST["Bairro"];
@@ -16,11 +16,11 @@
     if(isset($_POST["inserir"]) )
     {
 
-    $comando = $pdo->prepare("INSERT INTO cadastro Values($email,'$senha','$nome','$telefone','$data',
-    '$cep','$rua','$bairro','$numero','$estado','$complemento')");
+    $comando = $pdo->prepare("INSERT INTO cadastro Values('$email','$senha','$nome','$telefone','$data',
+    $cep,'$rua','$bairro',$numero,'$estado','$complemento')");
     
     $resultado = $comando->execute();
     //para voltar no formulário:
     header("location: pglogin1.html");
     }
-    
+    ?>
