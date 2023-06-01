@@ -11,7 +11,6 @@
     <header id="header">
         <a id="seta" href="pglogin1.html"><img src="img/seta.png" width="25px"></a>
       </header>
-      <script src="./pg_cadastro1.js"></script>
      
     
       <div class="barra">
@@ -97,22 +96,22 @@
   {
       //acesse o site regex101.com
       expressao = /[0-9]{5}-[0-9]{3}$/g; 
-      texto = cep.value;
+      texto = Cep.value;
       if (texto.length==5)
       {
-          cep.value = texto + "-";
+          Cep.value = texto + "-";
       }
 
       resposta = expressao.test(texto);
       if (resposta==true)
        {
-          cep.classList.remove('errado');
-          cep.classList.add('certo');
+          Cep.classList.remove('errado');
+          Cep.classList.add('certo');
        }
       if (resposta==false)
        {
-          cep.classList.remove('certo');
-          cep.classList.add('errado');
+          Cep.classList.remove('certo');
+          Cep.classList.add('errado');
        }
   }
 
