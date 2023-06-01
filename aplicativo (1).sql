@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 31-Maio-2023 às 17:38
+-- Tempo de geração: 01-Jun-2023 às 13:04
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -47,6 +47,7 @@ CREATE TABLE `cadastro` (
 
 INSERT INTO `cadastro` (`Email`, `Senha`, `Nome`, `Telefone`, `Data`, `Cep`, `Rua`, `Bairro`, `Número`, `Estado`, `Complemento`) VALUES
 ('andrebahttp@gmail', '2908', 'André Baschirotto Alexandre', 988033125, '2005-08-29', 89206230, 'São Viscente', 'Boa Vista', 323, 'Santa Catarina', '0'),
+('evelinnavegantes@gmail', '1802', 'Evelin Navegantes', 2147483647, '2006-02-18', 89230400, 'Jarivatuba', 'Fatima', 1797, 'Santa Catarina', 'apartamento'),
 ('kauamira2512@gmail', 'mira123', 'Kauã henrique', 2147483647, '2005-12-26', 89211460, 'Antonio Ramos', 'Floresta', 1044, 'Santa Catarina', '2:305');
 
 -- --------------------------------------------------------
