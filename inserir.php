@@ -16,9 +16,7 @@
     if(isset($_POST["inserir"]) )
     {
 
-    $comando = $pdo->prepare("INSERT INTO cadastro Values('$email','$senha','$nome','$telefone','$data',
-    $cep,'$rua','$bairro',$numero,'$estado','$complemento')");
-    
+    $comando = $pdo->prepare("INSERT INTO cadastro Values('$email','$senha','$nome','$telefone','$data', $cep,'$rua','$bairro',$numero,'$estado','$complemento','n')");
     $resultado = $comando->execute();
     //para voltar no formulário:
     header("location: pglogin1.html");
