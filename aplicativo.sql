@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Jun-2023 às 17:01
+-- Tempo de geração: 13/06/2023 às 20:59
 -- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Versão do PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastro`
+-- Estrutura para tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
@@ -43,18 +43,19 @@ CREATE TABLE `cadastro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `cadastro`
+-- Despejando dados para a tabela `cadastro`
 --
 
 INSERT INTO `cadastro` (`Email`, `Senha`, `Nome`, `Telefone`, `Data`, `Cep`, `Rua`, `Bairro`, `Número`, `Estado`, `Complemento`, `Admin`) VALUES
 ('andrebahttp@gmail', '2908', 'André Baschirotto Alexandre', 988033125, '2005-08-29', 89206230, 'São Viscente', 'Boa Vista', 323, 'Santa Catarina', 'casa', 's'),
+('elisangela@gmail', '0601', 'elisangela baschirotto', 2147483647, '2023-06-20', 88976, 'São Vicente', 'Boa Vista', 325, 'Santa Catarina', 'Casa', 'n'),
 ('evelinnavegantes@gmail', '1802', 'Evelin Navegantes', 2147483647, '2006-02-18', 89230400, 'Jarivatuba', 'Fatima', 1797, 'Santa Catarina', 'apartamento', 'n'),
 ('kauamira2512@gmail', 'mira123', 'Kauã henrique', 2147483647, '2005-12-26', 89211460, 'Antonio Ramos', 'Floresta', 1044, 'Santa Catarina', '2:305', 's');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `produtos`
+-- Estrutura para tabela `produtos`
 --
 
 CREATE TABLE `produtos` (
@@ -65,7 +66,7 @@ CREATE TABLE `produtos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `produtos`
+-- Despejando dados para a tabela `produtos`
 --
 
 INSERT INTO `produtos` (`Id_produtos`, `Nome`, `imagem`, `preco`) VALUES
@@ -76,19 +77,19 @@ INSERT INTO `produtos` (`Id_produtos`, `Nome`, `imagem`, `preco`) VALUES
 --
 
 --
--- Índices para tabela `cadastro`
+-- Índices de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`Email`);
 
 --
--- Índices para tabela `produtos`
+-- Índices de tabela `produtos`
 --
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`Id_produtos`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --

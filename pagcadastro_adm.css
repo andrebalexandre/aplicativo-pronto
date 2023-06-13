@@ -151,12 +151,14 @@ body
 
     .d5
     {
+      margin-left: 20px;
         display: flex;
         flex-direction: row
     }
 
     .d6
     {
+      margin-left: 20px;
         display: flex;
         flex-direction: row
     } 
@@ -178,7 +180,8 @@ body
 
     .bt1
     {
-        margin-left: 75px;
+        margin-left: 10px;
+        margin-top: 5px;
         width: 100px;
         height: 5vh;
         font-size: 13.5px;
