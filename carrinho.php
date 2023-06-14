@@ -1,3 +1,12 @@
+<?php
+include("conecta.php"); // conectar com banco de dados
+
+$comando = $pdo->prepare("SELECT * FROM produtos " );
+$resultado = $comando->execute();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,39 +60,62 @@
            
         </div>
 
-        <div class="tudo" id="tudo">
 
-            <div class="fild">
-                <fieldset class="pedido">
-                    <input class="caixa" type="checkbox">
-                </fieldset>
+
+
+
+
+
+
+        <?php
+            while ( $linhas = $comando->fetch() )
+            {
+                $Id_produto = $linhas ["Id_produtos"];
+                $Nome = $linhas ["Nome"];
+                $imagem = $linhas ["imagem"];
+                $imagem=base64_encode($imagem);
+                $preco = $linhas ["preco"];
+                echo("
+                <div class=\"tudo\" id=\"tudo\">
+
+            <div class=\"fild\">
+              <img src=\"data:image/jpeg;base64,$imagem\" width='50px'>
             </div>
 
-            <div class="nome">
-               <b>PÃO DE <br>
-                QUEIJO</b>
+            <div class=\"nome\">
+               <b>$Nome</b>
                 <br> <br>
-                <b>R$4,00</b>
+                <b>R$ $preco</b>
             </div>
 
-            <div class="ult">
+            <div class=\"ult\">
 
-                 <div class="preencher">
-                    <img onclick="Fechar('tudo');" class="fechar" src="img/exluir.png" width="30px">
+                 <div class=\"preencher\">
+                    <img onclick=\"Fechar('tudo');\" class=\"fechar\" src='' width=\"30px\">
                  </div>
 
-                 <div class="quantidade">
-                    <fieldset class="geral">
-                        <button onclick="Subtrair();" class="menos"> <b>-</b> </button>
-                        <input class="numero" value="1" id="numero" type="number">
-                        <button onclick="Adicionar();" class="mais"><b>+</b></button>
+                 <div class=\"quantidade\">
+                    <fieldset class=\"geral\">
+                        <button onclick=\"Subtrair();\" class=\"menos\"> <b>-</b> </button>
+                        <input class=\"numero\" value=\"1\" id=\"numero\" type=\"number\">
+                        <button onclick=\"Adicionar();\" class=\"mais\"><b>+</b></button>
                     </fieldset>
                  </div>
-                 <div class="botao">  </div>
+                 <div class=\"botao\">  </div>
             </div>
         </div>
+                
+                ");
 
-         <fieldset class="teste1">
+
+
+            }
+        ?>
+
+        
+
+
+<fieldset class="teste1">
            <a href="pg_pagamentos.html"> <button  class="teste">COMPRAR</button> </a>
          </fieldset>
 
