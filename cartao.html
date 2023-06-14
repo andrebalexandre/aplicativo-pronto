@@ -10,7 +10,7 @@
  
 </head>
 <body>
-    <form action="entrega.html" method="post">
+    
     <div class="wrapper" id="app">
         <div class="card-form">
           <div class="card-list">
@@ -106,28 +106,28 @@
               </div>
             </div>
           </div>
-
+        <form action="entrega.html" method="post">
           <div class="card-form__inner">
             <div class="card-input">
-              <label for="cardNumber" class="card-input__label">Número do cartão</label>
-              <input type="number" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" 
+              <label for="cardNumber"  class="card-input__label">Número do cartão</label>
+              <input type="number" name="Numero_cartao" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" 
               data-ref="cardNumber" autocomplete="off">
             </div>
             <div class="card-input">
-              <label for="cardName" class="card-input__label">Nome completo</label>
-              <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+              <label for="cardName"  class="card-input__label">Nome completo</label>
+              <input type="text" name="Nome_completo" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
             </div>
             <div class="card-form__row">
               <div class="card-form__col">
                 <div class="card-form__group">
                   <label for="cardMonth" class="card-input__label">Validade</label>
-                  <select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+                  <select name="Mes" class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
                     <option value="" disabled selected>Mês</option>
                     <option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
                       {{n < 10 ? '0' + n : n}}
                     </option>
                   </select>
-                  <select class="card-input__input -select" id="cardYear" v-model="cardYear" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+                  <select name="Ano" class="card-input__input -select" id="cardYear" v-model="cardYear" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
                     <option value="" disabled selected>Ano</option>
                     <option v-bind:value="$index + minCardYear" v-for="(n, $index) in 12" v-bind:key="n">
                       {{$index + minCardYear}}
@@ -138,7 +138,7 @@
               <div class="card-form__col -cvv">
                 <div class="card-input">
                   <label for="cardCvv" class="card-input__label">CVV</label>
-                  <input type="number" class="card-input__input" id="cardCvv" v-mask="'####'" maxlength="3" v-model="cardCvv" v-on:focus="flipCard(true)" v-on:blur="flipCard(false)" autocomplete="off">
+                  <input name="CCV" type="number" class="card-input__input" id="cardCvv" v-mask="'####'" maxlength="3" v-model="cardCvv" v-on:focus="flipCard(true)" v-on:blur="flipCard(false)" autocomplete="off">
                 </div>
               </div>
             </div>
@@ -146,11 +146,12 @@
             <button class="card-form__button" type="submit">
               Efetuar pagamento
             </button>
+          </form>
           </div>
         </div>
       
       </div>
-    </form>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </html>
