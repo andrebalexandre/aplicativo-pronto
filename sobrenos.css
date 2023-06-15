@@ -17,14 +17,37 @@ body
 
     .div3
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        margin-left: -20px;
-        margin-top: 70px;
+        width: 330px;
+        height: 290px;
+        border-radius: 5px;
+        margin-top: 65px;
+        margin-left: 20px;
+
+    }
+
+    .fachada
+    {
+        border-radius: 15px;
+    }
+
+    .div4
+    {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 27px;
+        font-style: italic;
+    }
+
+    .div5
+    {
+        width: 340px;
+        margin-left: 10px;
+        background-color: beige;
+        border-radius: 5px;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 16px;
+
     }
 
     .barra
@@ -57,70 +80,6 @@ body
     {
         margin-left: 20px;
         margin-top: -45px;
-    }
-
-    .bt1
-    {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        margin-left: 20px;
-        background-color: #7D0000;
-    }
-
-    .div4
-    {
-        display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-    }
-
-    .categorias
-    {
-        margin-left: 50px;
-
-    }
-
-    .div5
-    {
-        margin-top: 30px;
-        margin-left: -20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-
-    img
-    {
-        border-radius: 20px;
-    }
-    .produtos
-    {
-        margin-left: 20px;
-    }
-
-    .div6
-    {
-        margin-top: 30px;
-        margin-left: -60px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .textoprodutos
-    {
-        margin-left: 80px;
-    }
-
-    .div7
-    {
-        display: flex;
-        flex-direction: row;
-        margin-left: 0px;
-        margin-top: 15px;
-        background-color: purple;
     }
 
     .retangulo
