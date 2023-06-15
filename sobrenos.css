@@ -17,7 +17,6 @@ body
 
     .div3
     {
-        width: 330px;
         height: 290px;
         border-radius: 5px;
         margin-top: 65px;
@@ -27,6 +26,7 @@ body
 
     .fachada
     {
+        margin-left: 10px;
         border-radius: 15px;
     }
 
@@ -41,10 +41,11 @@ body
     .div5
     {
         width: 340px;
-        margin-left: 10px;
-        background-color: beige;
+        margin-left: 20px;
+        background-color: rgb(211, 194, 194);
         border-radius: 5px;
         margin-top: 15px;
+        margin-left: 20px;
         text-align: center;
         font-size: 16px;
 
@@ -52,7 +53,7 @@ body
 
     .barra
     {
-        width: 360px;
+        width: 380px;
         height: 20px;
         background-color: #7D0000;
         display: flex;
