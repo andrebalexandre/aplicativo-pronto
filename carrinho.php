@@ -59,14 +59,6 @@ $resultado = $comando->execute();
             </div>
            
         </div>
-
-
-
-
-
-
-
-
         <?php
             while ( $linhas = $comando->fetch() )
             {
@@ -104,16 +96,9 @@ $resultado = $comando->execute();
                  <div class=\"botao\">  </div>
             </div>
         </div>
-                
                 ");
-
-
-
             }
         ?>
-
-        
-
 
 <fieldset class="teste1">
            <a href="pg_pagamentos.html"> <button  class="teste">COMPRAR</button> </a>

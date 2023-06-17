@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14/06/2023 às 17:06
+-- Tempo de geração: 17-Jun-2023 às 16:19
 -- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastro`
+-- Estrutura da tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
@@ -43,7 +43,7 @@ CREATE TABLE `cadastro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `cadastro`
+-- Extraindo dados da tabela `cadastro`
 --
 
 INSERT INTO `cadastro` (`Email`, `Senha`, `Nome`, `Telefone`, `Data`, `Cep`, `Rua`, `Bairro`, `Número`, `Estado`, `Complemento`, `Admin`) VALUES
@@ -55,7 +55,7 @@ INSERT INTO `cadastro` (`Email`, `Senha`, `Nome`, `Telefone`, `Data`, `Cep`, `Ru
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `carrinho`
+-- Estrutura da tabela `carrinho`
 --
 
 CREATE TABLE `carrinho` (
@@ -66,7 +66,7 @@ CREATE TABLE `carrinho` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `produtos`
+-- Estrutura da tabela `produtos`
 --
 
 CREATE TABLE `produtos` (
@@ -77,7 +77,7 @@ CREATE TABLE `produtos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `produtos`
+-- Extraindo dados da tabela `produtos`
 --
 
 INSERT INTO `produtos` (`Id_produtos`, `Nome`, `imagem`, `preco`) VALUES
@@ -92,25 +92,25 @@ INSERT INTO `produtos` (`Id_produtos`, `Nome`, `imagem`, `preco`) VALUES
 --
 
 --
--- Índices de tabela `cadastro`
+-- Índices para tabela `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`Email`);
 
 --
--- Índices de tabela `carrinho`
+-- Índices para tabela `carrinho`
 --
 ALTER TABLE `carrinho`
   ADD PRIMARY KEY (`id_produto`);
 
 --
--- Índices de tabela `produtos`
+-- Índices para tabela `produtos`
 --
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`Id_produtos`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
