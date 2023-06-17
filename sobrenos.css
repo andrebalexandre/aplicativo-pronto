@@ -41,7 +41,7 @@ body
     .div5
     {
         width: 340px;
-        margin-left: 20px;
+        margin-left: 10px;
         background-color: rgb(211, 194, 194);
         border-radius: 5px;
         margin-top: 15px;
@@ -53,7 +53,7 @@ body
 
     .barra
     {
-        width: 380px;
+        width: 360px;
         height: 20px;
         background-color: #7D0000;
         display: flex;
